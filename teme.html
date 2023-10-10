@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraf în mijlocul paginii</title>
+    <link rel="stylesheet" href="temestyle.css">
+</head>
+<body>
+<div class="container">
+    <p>Buton pentru afisarea de exercitii.</p>
+</div>
+<div class="container">
+    <button class="center-button">Calculeaza</button>
+</div>
+</body>
+</html>
+
+<script>
+    // Ex.1 afisare mesaj
+    console.log("Salutare la toata lumea");
+
+    //Ex.2 Calcularea sumei a doua numere
+    let nr1=5;
+    let nr2=7;
+    let sum=nr1+nr2;
+    console.log("Suma este: " +sum);
+
+    //Ex.3 Verificarea unui numar par sau impar
+    let nr=9;
+    if(nr % 2 === 0) {
+        console.log(nr + " este numar par");
+    }else{
+            console.log(nr + " este numar impar");
+        }
+
+    //Ex.4 Inca un exemplu cu functia if si else
+    let age=29;
+    if(age >= 18){
+        console.log("Esti major");
+    }else{
+        console.log("Esti inca minor");
+    }
+
+    //Ex.5 Exemple de functii
+    function greet(name){
+        console.log("salutare," +name+ "!");
+    }
+    greet("Dani");
+    greet("Nicu");
+
+    //Ex.6
+    function nPlusone(n){
+        return n+1;
+    }
+    console.log(nPlusone(3));
+
+    //Ex.7 Inversarea a doua numere
+    let a=7;
+    let b=18;
+    console.log("primul numar este:", a , "al doilea numar este:", b)
+        let sw=a;
+        a=b;
+        b=sw;
+    console.log("numerele inversate sunt:", a, "si:", b);
+
+    //Ex. 8 calcul taxe
+    function calculTaxa(varsta){
+        if(varsta<18){
+            return 10;
+        }else{
+            return 25;
+        }
+    }
+    let taxa=calculTaxa(19);
+    console.log("Taxa este:", taxa, " lei");
+
+    //Ex. 10 verificare a doua numere
+    function maxim(nr1, nr2) {
+        if (nr1 > nr2) {
+            return nr1;
+        } else {
+            return nr2;
+        }
+    }
+
+    let rezultat = maxim(10, 5);
+    console.log("Cel mai mare număr este:", rezultat);
+
+    //Ex.11
+    let i=100;
+    while(i<=200){
+        console.log(i)
+        i+=20;
+    }
+
+    //Ex.12
+    'I am learning Web Dev'
+    .split('')  // separa sirul in cuvinte
+    .map(s=>s[0].toUpperCase()+screen.slice(1). toLowerCase())
+    .join(''); //uneste cuvintele inr-un singur sir si le separa pritr-un spatiu
+
+    //Ex.13
+    console.log(null || 'string');
+
+
+
+
+</script>
